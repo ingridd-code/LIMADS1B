@@ -1,0 +1,116 @@
+html, body{
+margin: 0;
+width: 100vw;
+height: 97.5vh;
+}
+header{
+    border: 1px;
+    border-style: solid;
+    background-color: rgb(198, 203, 165);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cabecalho{
+    width: 70%;
+    height: 80px;
+    border: 1px;
+    border-style: solid;
+    background-color: rgb(211, 191, 211);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    background-color: rgb(197, 197, 180);
+}
+main{
+    border: 1px;
+    border-style: solid;
+    width: 100%;
+    height:719px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+footer{
+    border: 1px;
+    border-style: solid;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.principal{
+    width: 80%;
+    height: 95%;
+    border: 1px;
+    border-style: solid;
+    background-color: rgb(248, 231, 210);
+}
+img{
+    width: 65px;
+    height: 50px;
+    background-size: cover;
+    box-shadow: rgb(171, 148, 148) 5px 0.3px 10px 2px;
+    border-radius: 50%;
+    opacity: 3;
+
+}
+.artCentralizado{
+    background-color: rgb(197, 197, 180);
+    display: flex;
+    justify-content: center;
+}
+.distribuida{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.artPocao{
+    width: 75px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;      border:2px solid;
+    background-color: white;
+    transition:background 0.3s ease ,transform 0.3s ease;
+}
+.artPocao:houver{
+    background: rgb(235, 234, 234);
+    animation: growAndRotate 1s ease-in-out infinite alternate;
+}
+.secaoAlinhamento {
+width: 100%;
+height: 70%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+/* Feitiços de Interação, Transições e Animação */
+.artPocao {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid;
+width: 75px;
+height: 70px;
+transition: background 0.3s ease, transform 0.3s ease;
+background-color: white;
+}
+.artPocao:hover {
+background: rgb(235, 234, 234);
+animation: growAndRotate 0.5s ease-in-out infinite alternate;
+@keyframes growAndRotate {
+   0% {
+    transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.08) rotate(3deg);
+    }
+}
